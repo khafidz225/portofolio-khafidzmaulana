@@ -12,7 +12,7 @@ export const DATA = {
     "Passionate about creating user-friendly Mobile Developer experiences, I'm driven by continuous learning in this dynamic field.",
   summary:
     "I am a dedicated mobile developer with a strong passion for exploring new technologies, particularly in the Flutter ecosystem. I thrive on learning and adapting to the latest trends in mobile development to create dynamic and user-friendly applications. I enjoy working collaboratively within a team, as I believe that teamwork not only enhances the quality of the final product but also fosters a more efficient and enjoyable workflow. Working alongside others allows us to combine our unique strengths, solve challenges together, and deliver high-quality solutions more effectively and swiftly.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/me.jpg",
   skills: [
     "Flutter",
     "Dart",
