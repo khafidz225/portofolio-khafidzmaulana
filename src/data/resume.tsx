@@ -182,11 +182,16 @@ export const DATA = {
           href: "https://www.travelagent.co.id/",
           icon: <Icons.globe className="size-3" />,
         },
-        // {
-        //   type: "Source",
-        //   href: "https://github.com/magicuidesign/magicui",
-        //   icon: <Icons.github className="size-3" />
-        // }
+        {
+          type: "Play Store",
+          href: "https://play.google.com/store/apps/details?id=io.van.mobile&pcampaignid=web_share",
+          icon: <Icons.playStoreIcon className="size-3" />,
+        },
+        {
+          type: "App Store",
+          href: "https://apps.apple.com/id/app/van-mobile/id6505094914",
+          icon: <Icons.appStoreIcon className="size-3" />,
+        },
       ],
       image: "/banner-waterway.png",
       video: "",
@@ -213,6 +218,16 @@ export const DATA = {
           type: "Website",
           href: "https://www.travelagent.co.id/",
           icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Play Store",
+          href: "https://play.google.com/store/apps/details?id=io.van.mobile&pcampaignid=web_share",
+          icon: <Icons.playStoreIcon className="size-3" />,
+        },
+        {
+          type: "App Store",
+          href: "https://apps.apple.com/id/app/van-mobile/id6505094914",
+          icon: <Icons.appStoreIcon className="size-3" />,
         },
       ],
       image: "/banner-ppob.jpg",
