@@ -126,7 +126,7 @@ export const DATA = {
   education: [
     {
       school: "Bootcamp Dumbways",
-      href: "hhttps://dumbways.id/",
+      href: "https://dumbways.id/",
       degree: "Full Stack Developer",
       logoUrl: "/logo-dw.png",
       start: "November 2022",
