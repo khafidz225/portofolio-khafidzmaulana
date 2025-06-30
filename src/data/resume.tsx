@@ -63,6 +63,17 @@ export const DATA = {
 
   work: [
     {
+      company: "PT Japfa Comfeed Indonesia TBK",
+      href: "https://www.japfacomfeed.co.id/",
+      badges: ["Freelance", "WFO"],
+      location: "Tebet, Jakarta Selatan, Indonesia",
+      title: "Mobile Developer",
+      logoUrl: "/japfa-seeklogo.svg",
+      start: "January 2025",
+      end: "Present",
+      description:
+        "Currently focusing on the development of Flocks, a poultry-focused super app at PT Japfa Comfeed Indonesia Tbk, integrating both farm recording and sales systems into a single platform. Responsible for building core modules such as depletion, feed usage, OVK usage, DOC entry, and chick-in planning. The app supports both offline and online modes, using sqflite for local data storage and a custom sync mechanism to handle data submission when connectivity is restored. Actively leveraging Flutter with Riverpod for state management and GetIt for dependency injection, following Clean Architecture to ensure a scalable and maintainable codebase."},
+    {
       company: "PT Teknologi Inovasi Labs (TILABS)",
       href: "https://tilabs.my/",
       badges: ["Fulltime", "WFO"],
@@ -70,7 +81,7 @@ export const DATA = {
       title: "Mobile Developer",
       logoUrl: "/tilabs.svg",
       start: "July 2024",
-      end: "Present",
+      end: "Nov 2024",
       description:
         "Currently focusing on the development of a Human Resource application named SUDO HR, building custom modules and integrating features such as attendance, leave, reimbursement, payroll, announcements, and overtime. Actively contributing to various projects at PT Teknologi Inovasi Labs using Flutter with BLoC for state management, and implementing notification features with FCM (Firebase Cloud Messaging).",
     },
@@ -142,10 +153,36 @@ export const DATA = {
     },
   ],
   projects: [
+      {
+      title: "Flocks (Mobile)",
+      href: "https://www.japfacomfeed.co.id/", // Ganti jika ada URL khusus untuk aplikasinya
+      dates: "Jan 2025 - Now",
+      active: true,
+      description:
+        "Developed Flocks, a poultry-focused super app that unifies sales and farm recording into a single platform. Implemented key features such as depletion, feed usage, OVK tracking, DOC management, and chick-in planning, with offline/online capabilities and a robust local-to-server sync system.",
+      technologies: [
+        "Flutter",
+        "Dart",
+        "Sqflite",
+        "Riverpod",
+        "Auto Router",
+        "DIO",
+        "Melos",
+      ],
+      links: [
+        // {
+        //   type: "Company",
+        //   href: "https://www.japfacomfeed.co.id/",
+        //   icon: <Icons.building className="size-3" />,
+        // },
+      ],
+      image: "/banner-flocks.png", // Ganti sesuai nama file image yang tersedia
+      video: "",
+    },
     {
       title: "SUDO HR (Mobile)",
       href: "https://e-database.kemendagri.go.id/",
-      dates: "July 2024 - Present",
+      dates: "July 2024 - Nov 2024",
       active: true,
       description:
         "Developed the SUDO HR mobile application, a comprehensive platform providing key HR functionalities such as Attendance, Leave, Reimbursement, Payroll, Announcements, and Overtime.",
