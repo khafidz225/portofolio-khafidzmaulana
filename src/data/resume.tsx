@@ -72,7 +72,8 @@ export const DATA = {
       start: "January 2025",
       end: "Present",
       description:
-        "Currently focusing on the development of Flocks, a poultry-focused super app at PT Japfa Comfeed Indonesia Tbk, integrating both farm recording and sales systems into a single platform. Responsible for building core modules such as depletion, feed usage, OVK usage, DOC entry, and chick-in planning. The app supports both offline and online modes, using sqflite for local data storage and a custom sync mechanism to handle data submission when connectivity is restored. Actively leveraging Flutter with Riverpod for state management and GetIt for dependency injection, following Clean Architecture to ensure a scalable and maintainable codebase."},
+        "Currently focusing on the development of Flocks, a poultry-focused super app at PT Japfa Comfeed Indonesia Tbk, integrating both farm recording and sales systems into a single platform. Responsible for building core modules such as depletion, feed usage, OVK usage, DOC entry, and chick-in planning. The app supports both offline and online modes, using sqflite for local data storage and a custom sync mechanism to handle data submission when connectivity is restored. Actively leveraging Flutter with Riverpod for state management and GetIt for dependency injection, following Clean Architecture to ensure a scalable and maintainable codebase.",
+    },
     {
       company: "PT Teknologi Inovasi Labs (TILABS)",
       href: "https://tilabs.my/",
@@ -153,7 +154,7 @@ export const DATA = {
     },
   ],
   projects: [
-      {
+    {
       title: "Flocks (Mobile)",
       href: "https://www.japfacomfeed.co.id/", // Ganti jika ada URL khusus untuk aplikasinya
       dates: "Jan 2025 - Now",
@@ -170,6 +171,11 @@ export const DATA = {
         "Melos",
       ],
       links: [
+        {
+          type: "Play Store",
+          href: "https://play.google.com/store/apps/details?id=com.floxx.mobile&pcampaignid=web_share",
+          icon: <Icons.playStoreIcon className="size-3" />,
+        },
         // {
         //   type: "Company",
         //   href: "https://www.japfacomfeed.co.id/",
