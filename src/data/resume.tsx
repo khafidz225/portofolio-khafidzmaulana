@@ -1,15 +1,14 @@
 import { Icons } from "@/components/icons";
-import { CodeIcon, HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Khafidz Maulana",
   initials: "FID",
-  url: "https://dillion.io",
-  portfolioUrl: "https://egagofur.me",
   location: "Tangerang, Banten, Indonesia",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  role: "Mobile Developer",
+  specialty: "Flutter",
+  tagline: "Building mobile experiences for real-world operations.",
   description:
-    "Passionate about creating user-friendly Mobile Developer experiences, I'm driven by continuous learning in this dynamic field.",
+    "Mobile Developer focused on Flutter, offline-capable workflows, and user-friendly digital products across poultry operations, HR, travel, and payments.",
   summary:
     "I am a dedicated mobile developer with a strong passion for exploring new technologies, particularly in the Flutter ecosystem. I thrive on learning and adapting to the latest trends in mobile development to create dynamic and user-friendly applications. I enjoy working collaboratively within a team, as I believe that teamwork not only enhances the quality of the final product but also fosters a more efficient and enjoyable workflow. Working alongside others allows us to combine our unique strengths, solve challenges together, and deliver high-quality solutions more effectively and swiftly.",
   avatarUrl: "/me.jpg",
@@ -24,17 +23,48 @@ export const DATA = {
     "Golang",
     "PostgreSQL",
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+  skillGroups: [
     {
-      href: "/#projects",
-      icon: CodeIcon,
-      label: "Projects",
+      title: "Mobile core",
+      description:
+        "Flutter and Dart across Floxx, SUDO HR, Waterway, and PPOB.",
+      tools: ["Flutter", "Dart"],
+    },
+    {
+      title: "Architecture & state",
+      description:
+        "Riverpod and Clean Architecture for Floxx, BLoC for SUDO HR, plus GetIt and Provider across production work.",
+      tools: ["Riverpod", "BLoC", "Provider", "GetIt", "Clean Architecture"],
+    },
+    {
+      title: "Data & integrations",
+      description:
+        "Local persistence, offline-to-online sync, API integration, and notifications for operational mobile products.",
+      tools: ["Sqflite", "Dio", "http", "Firebase", "FCM"],
+    },
+    {
+      title: "Web & backend foundations",
+      description:
+        "A full-stack foundation used to understand the systems surrounding a mobile experience.",
+      tools: [
+        "Next.js",
+        "React Js",
+        "Typescript",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Golang",
+        "PostgreSQL",
+      ],
     },
   ],
+  navbar: [
+    { href: "/#work", label: "Work" },
+    { href: "/#craft", label: "Craft" },
+    { href: "/#journey", label: "Journey" },
+    { href: "/blog", label: "Notes" },
+  ],
   contact: {
-    email: "m.khafidzmaulana@gmail.com",
+    email: "m.khafidzmaulana14@gmail.com",
     tel: "+6289525548561",
     social: {
       GitHub: {
@@ -63,70 +93,82 @@ export const DATA = {
 
   work: [
     {
-      company: "PT Japfa Comfeed Indonesia TBK",
+      company: "PT Japfa Comfeed Indonesia",
       href: "https://www.japfacomfeed.co.id/",
-      badges: ["Freelance", "WFO"],
-      location: "Tebet, Jakarta Selatan, Indonesia",
+      badges: ["Freelance", "Hybrid"],
+      location: "Hybrid",
       title: "Mobile Developer",
       logoUrl: "/japfa-seeklogo.svg",
       start: "January 2025",
       end: "Present",
       description:
-        "Currently focusing on the development of Flocks, a poultry-focused super app at PT Japfa Comfeed Indonesia Tbk, integrating both farm recording and sales systems into a single platform. Responsible for building core modules such as depletion, feed usage, OVK usage, DOC entry, and chick-in planning. The app supports both offline and online modes, using sqflite for local data storage and a custom sync mechanism to handle data submission when connectivity is restored. Actively leveraging Flutter with Riverpod for state management and GetIt for dependency injection, following Clean Architecture to ensure a scalable and maintainable codebase.",
+        "Development work on Floxx, a poultry-focused super app at PT Japfa Comfeed Indonesia, brings farm recording and sales systems into a single platform. Responsibilities include core modules such as depletion, feed usage, OVK usage, DOC entry, and chick-in planning. The app supports offline and online modes, using sqflite for local storage and a custom synchronization mechanism when connectivity is restored. The implementation uses Flutter, Riverpod, GetIt, and Clean Architecture.",
+    },
+    {
+      company: "Self Employed",
+      href: "#",
+      badges: ["Freelance", "Remote"],
+      location: "Tangerang, Banten, Indonesia · Remote",
+      title: "Mobile Developer",
+      logoUrl: "",
+      start: "November 2024",
+      end: "Present",
+      description:
+        "Independent mobile development work delivered remotely from Tangerang, Indonesia.",
     },
     {
       company: "PT Teknologi Inovasi Labs (TILABS)",
-      href: "https://tilabs.my/",
-      badges: ["Fulltime", "WFO"],
-      location: "Cakung, Jakarta Timur, Indonesia",
+      href: "https://tilabs.co/",
+      badges: ["Full-time", "On-site"],
+      location: "On-site",
       title: "Mobile Developer",
       logoUrl: "/tilabs.svg",
       start: "July 2024",
-      end: "Nov 2024",
+      end: "November 2024",
       description:
-        "Currently focusing on the development of a Human Resource application named SUDO HR, building custom modules and integrating features such as attendance, leave, reimbursement, payroll, announcements, and overtime. Actively contributing to various projects at PT Teknologi Inovasi Labs using Flutter with BLoC for state management, and implementing notification features with FCM (Firebase Cloud Messaging).",
+        "Focused on the development of SUDO HR, an internal Human Resource application, building custom modules and integrating features such as attendance, leave, reimbursement, payroll, announcements, and overtime. Contributed to projects at PT Teknologi Inovasi Labs using Flutter with BLoC for state management and implemented notification features with FCM (Firebase Cloud Messaging).",
     },
     {
-      company: "PT Voltras Internasional",
+      company: "PT Voltras Travel",
       href: "https://voltras.co.id/",
-      badges: ["Fulltime", "WFO"],
-      location: "Alam Sutera, Tangerang Selatan, Indonesia",
-      title: "Flutter Developer",
+      badges: ["Contract", "On-site"],
+      location: "Alam Sutera Town Center, South Tangerang, Indonesia",
+      title: "Software Engineer",
       logoUrl: "/logo-voltras.jpg",
       start: "February 2023",
       end: "July 2024",
       description:
-        "Currently working as a Software Engineer at PT Voltras Internasional, focusing on developing the PPOB and Waterway modules to enhance service offerings. I maintain and improve core modules like Hotel and Payment, leveraging Flutter for mobile app development and using GetIt for dependency injection. Additionally, I implement Provider for state management to ensure efficient data handling and collaborate with cross-functional teams to refine requirements and features",
+        "Worked as a Software Engineer at PT Voltras Travel, focusing on the PPOB and Waterway modules to enhance service offerings. Maintained and improved core modules such as Hotel and Payment, using Flutter for mobile development and GetIt for dependency injection. Used Provider for state management and collaborated with cross-functional teams to refine requirements and features.",
     },
     {
-      company: "Mitra Grab & Shopee Food",
+      company: "Shopee Food",
       href: "#",
-      badges: ["Part Time"],
-      location: "",
+      badges: ["Freelance"],
+      location: "Banten, Indonesia",
       title: "Mitra Driver",
       logoUrl: "/logo-driver.jpg",
-      start: "March 2023",
-      end: "March 2022",
+      start: "January 2022",
+      end: "May 2023",
       description:
-        "Delivered food, goods, and transported passengers to designated locations efficiently, as indicated in the application. Ensured timely and safe deliveries by following optimized routes while maintaining excellent customer service. Utilized the application to track orders and delivery points, enhancing accuracy and customer satisfaction.",
+        "Delivered food orders through the Shopee Food platform, following order and delivery details in the application while maintaining timely service and clear customer communication.",
     },
     {
-      company: "PT Prima Food Internasional",
+      company: "Prima Food International",
       href: "https://primafreshmart.com/",
-      badges: ["Fulltime", "WFO"],
-      location: "Tangerang",
+      badges: ["Contract"],
+      location: "Tangerang, Banten, Indonesia",
       title: "Food Advisor",
       logoUrl: "/logo-prima.jpg",
-      start: "March 2023",
-      end: "August 2023",
+      start: "October 2021",
+      end: "January 2022",
       description:
         "Operated as a cashier, efficiently handling transactions and assisting customers with their purchases. Maintained store cleanliness and organized product displays to create an inviting shopping environment. Conducted canvassing to promote products and attract potential customers in nearby areas. Provided excellent customer service by addressing inquiries and ensuring a positive shopping experience. Performed delivery orders as needed, ensuring timely and accurate deliveries to customer locations.",
     },
     {
-      company: "PT Lionel Jaya Logistik",
+      company: "Lionel Group",
       href: "https://lionelgroup.id/",
-      badges: ["Fulltime", "WFO"],
-      location: "Tangerang",
+      badges: ["Contract"],
+      location: "Tangerang City, Banten, Indonesia",
       title: "Data Entry",
       logoUrl: "/logo-lionel.png",
       start: "December 2020",
@@ -147,7 +189,7 @@ export const DATA = {
     {
       school: "SMAN 8 Kabupaten Tangerang ",
       href: "https://sman8kabtangerang.sch.id/",
-      degree: "System Information, Networking and Application",
+      degree: "IPA (Ilmu Pengetahuan Alam)",
       logoUrl: "/logo-sma.jpg",
       start: "2017",
       end: "2020",
@@ -155,12 +197,17 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Flocks (Mobile)",
+      title: "Floxx (Mobile)",
+      category: "Field operations",
+      role: "Mobile Developer",
       href: "https://www.japfacomfeed.co.id/", // Ganti jika ada URL khusus untuk aplikasinya
-      dates: "Jan 2025 - Now",
-      active: true,
+      dates: "Jan 2025 - Present",
+      challenge:
+        "Keep farm-recording workflows usable across online and offline conditions.",
+      outcome:
+        "Farm recording and sales workflows are brought together in one poultry-focused product.",
       description:
-        "Developed Flocks, a poultry-focused super app that unifies sales and farm recording into a single platform. Implemented key features such as depletion, feed usage, OVK tracking, DOC management, and chick-in planning, with offline/online capabilities and a robust local-to-server sync system.",
+        "Developed Floxx, a poultry-focused super app that unifies sales and farm recording into a single platform. Implemented key features such as depletion, feed usage, OVK tracking, DOC management, and chick-in planning, with offline/online capabilities and a robust local-to-server sync system.",
       technologies: [
         "Flutter",
         "Dart",
@@ -182,16 +229,21 @@ export const DATA = {
         //   icon: <Icons.building className="size-3" />,
         // },
       ],
-      image: "/banner-flocks.png", // Ganti sesuai nama file image yang tersedia
+      image: "/banner-floxx.png",
       video: "",
+      sensitiveVisual: false,
     },
     {
       title: "SUDO HR (Mobile)",
-      href: "https://e-database.kemendagri.go.id/",
+      category: "Internal people operations",
+      role: "Mobile Developer",
+      href: "",
       dates: "July 2024 - Nov 2024",
-      active: true,
+      internal: true,
+      outcome:
+        "Internal employees can access attendance, leave, reimbursement, payroll, announcements, and overtime workflows in one mobile HR product.",
       description:
-        "Developed the SUDO HR mobile application, a comprehensive platform providing key HR functionalities such as Attendance, Leave, Reimbursement, Payroll, Announcements, and Overtime.",
+        "Developed SUDO HR, an internal mobile application providing HR workflows such as attendance, leave, reimbursement, payroll, announcements, and overtime.",
       technologies: [
         "Flutter",
         "Dart",
@@ -201,21 +253,19 @@ export const DATA = {
         "GetIt",
         "Go Router",
       ],
-      links: [
-        // {
-        //   type: "Website",
-        //   href: "https://e-database.kemendagri.go.id/",
-        //   icon: <Icons.globe className="size-3" />,
-        // },
-      ],
+      links: [],
       image: "/banner-sudohr.png",
       video: "",
+      sensitiveVisual: false,
     },
     {
       title: "Waterway (Mobile & Web)",
+      category: "Travel operations",
+      role: "Flutter Developer",
       href: "https://www.travelagent.co.id/",
       dates: "February 2023 - July 2024",
-      active: false,
+      outcome:
+        "The Waterway module is available across mobile and web experiences.",
       description:
         "Developed the Waterway module for TravelAgent, creating both mobile and web versions to enhance accessibility and functionality for users across platforms.",
       technologies: ["Flutter", "GetIt", "http", "Firebase", "Payment"],
@@ -238,12 +288,16 @@ export const DATA = {
       ],
       image: "/banner-waterway.png",
       video: "",
+      sensitiveVisual: false,
     },
     {
       title: "PPOB (Mobile & Web)",
+      category: "Payments",
+      role: "Flutter Developer",
       href: "https://www.travelagent.co.id/",
       dates: "February 2023 - July 2024",
-      active: false,
+      outcome:
+        "Users can access multiple payment services through one PPOB flow.",
       description:
         "Developed a PPOB (Payment Point Online Bank) system to facilitate seamless online transactions, providing users with convenient access to various payment services.",
       technologies: [
@@ -275,12 +329,16 @@ export const DATA = {
       ],
       image: "/banner-ppob.jpg",
       video: "",
+      sensitiveVisual: false,
     },
     {
       title: "Hallo Corona (Web)",
+      category: "Web foundation",
+      role: "Full Stack Developer · Bootcamp project",
       href: "https://jocular-griffin-e7af5f.netlify.app/",
-      dates: "December 2022 - Janury 2023",
-      active: false,
+      dates: "December 2022 - January 2023",
+      outcome:
+        "Users can register, sign in, consult by message, and select specialist doctors in one web experience.",
       description:
         "Developed the Hallo Corona website during my bootcamp at Dumbways, featuring user registration, login, message replies, and the ability to select specialized doctors, providing a comprehensive platform for users to access healthcare support easily.",
       technologies: [
@@ -305,12 +363,16 @@ export const DATA = {
       ],
       image: "/banner-hallocorona.jpg",
       video: "",
+      sensitiveVisual: false,
     },
     {
       title: "Dewe Tour (Web)",
+      category: "Web foundation",
+      role: "Full Stack Developer · Bootcamp project",
       href: "https://dewetour14.netlify.app/",
-      dates: "November 2022 - December 2023",
-      active: false,
+      dates: "DumbWays bootcamp project",
+      outcome:
+        "Users can explore tour packages, access travel information, and make bookings.",
       description:
         "Developed the Dwew Tour website while attending the Dumbways Bootcamp, creating a platform that allows users to explore tour packages, make bookings, and access travel information easily.",
       technologies: [
@@ -335,6 +397,7 @@ export const DATA = {
       ],
       image: "/banner-dewetour.jpg",
       video: "",
+      sensitiveVisual: false,
     },
   ],
   hackathons: [

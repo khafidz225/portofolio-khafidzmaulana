@@ -5,18 +5,20 @@ import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 
 export function ModeToggle() {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   return (
     <Button
       variant="ghost"
       type="button"
       size="icon"
-      className="px-2"
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      className="size-11 rounded-full px-2 text-muted-foreground hover:bg-muted hover:text-foreground"
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      aria-label="Toggle color theme"
+      title="Toggle color theme"
     >
-      <SunIcon className="h-[1.2rem] w-[1.2rem] text-neutral-800 dark:hidden dark:text-neutral-200" />
-      <MoonIcon className="hidden h-[1.2rem] w-[1.2rem] text-neutral-800 dark:block dark:text-neutral-200" />
+      <SunIcon className="h-[1.2rem] w-[1.2rem] dark:hidden" aria-hidden="true" />
+      <MoonIcon className="hidden h-[1.2rem] w-[1.2rem] dark:block" aria-hidden="true" />
     </Button>
   );
 }

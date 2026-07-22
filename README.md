@@ -1,47 +1,49 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# Khafidz Maulana — Portfolio
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+An editorial, project-first portfolio for Khafidz Maulana, a Mobile Developer
+focused on Flutter and reliable real-world workflows.
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+## Stack
 
-# Features
+- Next.js 14 App Router
+- React 18 and TypeScript
+- Tailwind CSS and shadcn/Radix primitives
+- Framer Motion for isolated, reduced-motion-aware interactions
+- Local MDX content for field notes
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+## Local development
 
-# Getting Started Locally
+The installed workspace currently uses pnpm:
 
-1. Clone this repository to your local machine:
+```bash
+pnpm install
+pnpm dev
+```
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+Open [http://localhost:3000](http://localhost:3000).
 
-2. Move to the cloned directory
+## Verification
 
-   ```bash
-   cd portfolio
-   ```
+```bash
+pnpm lint
+pnpm exec tsc --noEmit --incremental false
+pnpm build
+```
 
-3. Install dependencies:
+There is no automated test runner or formatter configured in the repository.
 
-   ```bash
-   pnpm install
-   ```
+## Content and deployment
 
-4. Start the local Server:
+Portfolio facts, work history, skills, project links, and contact destinations
+live in `src/data/resume.tsx`. Blog posts live in `content/*.mdx`.
 
-   ```bash
-   pnpm dev
-   ```
+Set `NEXT_PUBLIC_SITE_URL` to the canonical production origin so metadata,
+Open Graph URLs, `robots.txt`, and `sitemap.xml` point to the deployed site:
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+```env
+NEXT_PUBLIC_SITE_URL=https://your-domain.example
+```
 
-# License
-
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+Project screenshots that include operational or account data are intentionally
+softened in the live interface. Replace them with approved, sanitized assets
+before presenting detailed product screens at full clarity.
